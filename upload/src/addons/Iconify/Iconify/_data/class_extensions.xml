@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class_extensions>
+  <extension from_class="XF\Admin\Controller\StyleProperty" to_class="Iconify\Iconify\Admin\Controller\StyleProperty" execute_order="10" active="1"/>
+  <extension from_class="XF\Entity\Option" to_class="Iconify\Iconify\Entity\Option" execute_order="10" active="1"/>
+  <extension from_class="XF\Entity\StyleProperty" to_class="Iconify\Iconify\Entity\StyleProperty" execute_order="10" active="1"/>
+  <extension from_class="XF\Template\Templater" to_class="Iconify\Iconify\Template\Templater" execute_order="10" active="1"/>
+</class_extensions>

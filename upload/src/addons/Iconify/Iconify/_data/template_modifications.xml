@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="admin" template="addon_list_macros" modification_key="addon_admin_iconify_icon" description="Add Iconify icons support to Add-ons list" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:elseif is="$addOn.hasIcon()" />]]></find>
+    <replace><![CDATA[<xf:elseif is="contains($addOn.icon, 'icon:')" />
+				<iconify-icon class="{$addOn.icon}" data-width="64px" data-height="64px"></iconify-icon>
+			<xf:elseif is="$addOn.hasIcon()" />]]></replace>
+  </modification>
+  <modification type="admin" template="option_edit" modification_key="option_edit_icon_editor" description="Add icon to option editor" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:textarearow name="edit_format_params"]]></find>
+    <replace><![CDATA[<xf:js src="iconify/option.js" />
+			<xf:head option="iconify_option_css">
+				<style type="text/css">
+					.formRow--editing-icon {
+						display: none !important;
+					}
+					.iconOptions .formRow + .formRow dd {
+						margin-top: 0;
+					}
+				</style>
+			</xf:head>
+
+			<div style="display: none" class="iconOptions">
+				<hr class="formRowSep" />
+
+				<xf:set var="$defaultValue">{"value": "", "default": "", "canTransform": true, "showColor": false, "required": false}</xf:set>
+				<xf:iconboxrow name="edit_icon" value="{{ $option.edit_format === 'icon' ? {$option.default_value} : {$defaultValue} }}" format="json" can-transform="true" show-color="true" always-show-color="true" required="false" use-default="true" keep-original-value="true" label="{{ phrase('iconbox.option_title') }}" explain="{{ phrase('iconbox.option_explain') }}" />
+
+				<xf:checkboxrow label="">
+					<xf:option name="edit_icon_transform[selected]" selected="false" label="{{ phrase('iconbox.option_transform') }}" hint="{{ phrase('iconbox.option_transform_hint') }}" />
+					<xf:option name="edit_icon_color[selected]" selected="false" label="{{ phrase('iconbox.option_color') }}" hint="{{ phrase('iconbox.option_color_hint') }}" />
+					<xf:option name="edit_icon_required[selected]" selected="false" label="{{ phrase('iconbox.option_required') }}" hint="{{ phrase('iconbox.option_required_hint') }}" />
+				</xf:checkboxrow>
+			</div>
+
+			<xf:textarearow name="edit_format_params"]]></replace>
+  </modification>
+  <modification type="admin" template="option_edit" modification_key="option_edit_icon_format" description="Add icon to option types" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:option value="username">{{ phrase('user_name_input') }}</xf:option>]]></find>
+    <replace><![CDATA[<xf:option value="username">{{ phrase('user_name_input') }}</xf:option>
+				<xf:option value="icon">{{ phrase('iconbox.icon') }}</xf:option>]]></replace>
+  </modification>
+  <modification type="admin" template="option_macros" modification_key="option_macros_iconbox" description="Add icon to option macros" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:elseif is="$option.edit_format == 'template'" />]]></find>
+    <replace><![CDATA[<xf:elseif is="$option.edit_format == 'icon'" />
+		<xf:iconboxrow name="{$inputName}" value="{$option.option_value}" class="{$formatParams.class}" can-reset="true">
+			<xf:label>{$option.title}</xf:label>
+			<xf:hint>{$hintHtml}</xf:hint>
+			<xf:explain>{$explainHtml}</xf:explain>
+			<xf:finalhtml>{$listedHtml}</xf:finalhtml>
+		</xf:iconboxrow>
+	<xf:elseif is="$option.edit_format == 'template'" />]]></replace>
+  </modification>
+  <modification type="admin" template="style_property_edit" modification_key="style_property_edit_icon" description="Add icon type to style property editor" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:option value="value" data-xf-init="disabler" data-container=".js-propertyTypeValue" data-hide="true">
+					{{ phrase('value') }}</xf:option>]]></find>
+    <replace><![CDATA[<xf:option value="value" data-xf-init="disabler" data-container=".js-propertyTypeValue" data-hide="true">
+					{{ phrase('value') }}</xf:option>
+				<xf:option value="icon" data-xf-init="disabler" data-container=".js-propertyTypeIcon" data-hide="true">
+					{{ phrase('iconbox.icon') }}</xf:option>]]></replace>
+  </modification>
+  <modification type="admin" template="style_property_edit" modification_key="style_property_edit_icon_block" description="Add icon editor to style property editor" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<div class="js-propertyTypeValue">]]></find>
+    <replace><![CDATA[<div class="js-propertyTypeIcon">
+				<xf:js src="iconify/property.js" />
+				<input type="hidden" name="icon_value" value="{$property.property_value}" />
+				<xf:set var="$defaultValue">{"value": "", "default": "", "canTransform": true, "showColor": false, "required": false}</xf:set>
+				<xf:iconboxrow name="edit_icon" value="{{ $property.property_type === 'icon' ? {$property.property_value} : {$defaultValue} }}" format="json" can-transform="true" show-color="true" always-show-color="true" required="false" use-default="true" label="{{ phrase('iconbox.option_title') }}" explain="{{ phrase('iconbox.option_explain') }}" />
+
+				<xf:checkboxrow label="">
+					<xf:option name="edit_icon_transform[selected]" selected="false" label="{{ phrase('iconbox.option_transform') }}" hint="{{ phrase('iconbox.option_transform_hint') }}" />
+					<xf:option name="edit_icon_color[selected]" selected="false" label="{{ phrase('iconbox.option_color') }}" hint="{{ phrase('iconbox.option_color_hint') }}" />
+					<xf:option name="edit_icon_required[selected]" selected="false" label="{{ phrase('iconbox.option_required') }}" hint="{{ phrase('iconbox.option_required_hint') }}" />
+				</xf:checkboxrow>
+			</div>
+			<div class="js-propertyTypeValue">]]></replace>
+  </modification>
+  <modification type="admin" template="style_property_group_view" modification_key="style_property_group_view_icon" description="Show icon style properties with value properties" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[{$map.Property.property_type} == 'value']]></find>
+    <replace><![CDATA[{$map.Property.property_type} == 'value' or {$map.Property.property_type} == 'icon']]></replace>
+  </modification>
+  <modification type="admin" template="style_property_macros" modification_key="style_property_macros_icon" description="Add icon style property" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:elseif is="$property.value_type == 'unit'" />]]></find>
+    <replace><![CDATA[<xf:elseif is="$property.property_type == 'icon'" />
+
+		<xf:iconboxrow
+			name="{$formBaseKey}"
+			value="{$property.property_value}"
+			class="input--number"
+			rowclass="{$rowClass}"
+			label="{$titleHtml}"
+			hint="{$hintHtml}"
+			explain="{$property.description}"
+			dir="ltr" />
+
+	<xf:elseif is="$property.value_type == 'unit'" />]]></replace>
+  </modification>
+</template_modifications>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="iconbox.button_cancel" version_id="1" version_string="1.0.0-dev"><![CDATA[Close]]></phrase>
+  <phrase title="iconbox.button_clear" version_id="1" version_string="1.0.0-dev"><![CDATA[Clear]]></phrase>
+  <phrase title="iconbox.button_submit" version_id="1" version_string="1.0.0-dev"><![CDATA[Select Icon]]></phrase>
+  <phrase title="iconbox.displaying_collection" version_id="1" version_string="1.0.0-dev"><![CDATA[Displaying collection: {title}]]></phrase>
+  <phrase title="iconbox.displaying_icons" version_id="1" version_string="1.0.0-dev"><![CDATA[Displaying {count} icons:]]></phrase>
+  <phrase title="iconbox.displaying_icons0" version_id="1" version_string="1.0.0-dev"><![CDATA[No icons to display.]]></phrase>
+  <phrase title="iconbox.displaying_icons1" version_id="1" version_string="1.0.0-dev"><![CDATA[Displaying 1 icon:]]></phrase>
+  <phrase title="iconbox.displaying_icons_more" version_id="1" version_string="1.0.0-dev"><![CDATA[Displaying {count} icons (click second page to load more results):]]></phrase>
+  <phrase title="iconbox.flip_title" version_id="1" version_string="1.0.0-dev"><![CDATA[Flip Icon]]></phrase>
+  <phrase title="iconbox.hflip_text" version_id="1" version_string="1.0.0-dev"><![CDATA[Horizontal]]></phrase>
+  <phrase title="iconbox.hflip_tooltip" version_id="1" version_string="1.0.0-dev"><![CDATA[Flip horizontally]]></phrase>
+  <phrase title="iconbox.icon" version_id="1" version_string="1.0.0-dev"><![CDATA[Icon]]></phrase>
+  <phrase title="iconbox.option_color" version_id="1" version_string="1.0.0-dev"><![CDATA[Show color picker]]></phrase>
+  <phrase title="iconbox.option_color_hint" version_id="1" version_string="1.0.0-dev"><![CDATA[It is better to use CSS to add color to icon, so by default this option is disabled, though color picker is shown above regardless of option. Color picker is available only for colorless icons.]]></phrase>
+  <phrase title="iconbox.option_explain" version_id="1" version_string="1.0.0-dev"><![CDATA[Set color only if you want icon to be specific color instead of using text color. It works only for colorless icons.]]></phrase>
+  <phrase title="iconbox.option_required" version_id="1" version_string="1.0.0-dev"><![CDATA[Require icon]]></phrase>
+  <phrase title="iconbox.option_required_hint" version_id="1" version_string="1.0.0-dev"><![CDATA[If enabled, icon cannot be set to empty.]]></phrase>
+  <phrase title="iconbox.option_title" version_id="1" version_string="1.0.0-dev"><![CDATA[Default icon and optional color]]></phrase>
+  <phrase title="iconbox.option_transform" version_id="1" version_string="1.0.0-dev"><![CDATA[Allow icon transformations]]></phrase>
+  <phrase title="iconbox.option_transform_hint" version_id="1" version_string="1.0.0-dev"><![CDATA[Allows rotating and flipping icon. Enabled by default.]]></phrase>
+  <phrase title="iconbox.pagination_more" version_id="1" version_string="1.0.0-dev"><![CDATA[Show more search results]]></phrase>
+  <phrase title="iconbox.rotate" version_id="1" version_string="1.0.0-dev"><![CDATA[Rotate {deg}]]></phrase>
+  <phrase title="iconbox.rotate0" version_id="1" version_string="1.0.0-dev"><![CDATA[Cancel rotation]]></phrase>
+  <phrase title="iconbox.rotate_title" version_id="1" version_string="1.0.0-dev"><![CDATA[Rotate Icon]]></phrase>
+  <phrase title="iconbox.search_button" version_id="1" version_string="1.0.0-dev"><![CDATA[Find Icons]]></phrase>
+  <phrase title="iconbox.search_button_collection" version_id="1" version_string="1.0.0-dev"><![CDATA[Search {title}]]></phrase>
+  <phrase title="iconbox.search_placeholder" version_id="1" version_string="1.0.0-dev"><![CDATA[Search all icons...]]></phrase>
+  <phrase title="iconbox.search_placeholder_prefixed" version_id="1" version_string="1.0.0-dev"><![CDATA[Search collection...]]></phrase>
+  <phrase title="iconbox.search_placeholder_prefixed_named" version_id="1" version_string="1.0.0-dev"><![CDATA[Search {title}...]]></phrase>
+  <phrase title="iconbox.search_reset" version_id="1" version_string="1.0.0-dev"><![CDATA[Clear Search]]></phrase>
+  <phrase title="iconbox.status_empty" version_id="1" version_string="1.0.0-dev"><![CDATA[No icons to display.]]></phrase>
+  <phrase title="iconbox.status_empty_search" version_id="1" version_string="1.0.0-dev"><![CDATA[No icons found. Try different search term.]]></phrase>
+  <phrase title="iconbox.status_loading_collection" version_id="1" version_string="1.0.0-dev"><![CDATA[Loading collection...]]></phrase>
+  <phrase title="iconbox.status_max_results" version_id="1" version_string="1.0.0-dev"><![CDATA[Too many search results. Showing only first {count} icons.]]></phrase>
+  <phrase title="iconbox.status_searching" version_id="1" version_string="1.0.0-dev"><![CDATA[Searching...]]></phrase>
+  <phrase title="iconbox.status_searching_more" version_id="1" version_string="1.0.0-dev"><![CDATA[Loading more search results...]]></phrase>
+  <phrase title="iconbox.tooltip_category" version_id="1" version_string="1.0.0-dev"><![CDATA[Category: {category}]]></phrase>
+  <phrase title="iconbox.tooltip_char" version_id="1" version_string="1.0.0-dev"><![CDATA[Character: {char}]]></phrase>
+  <phrase title="iconbox.tooltip_name" version_id="1" version_string="1.0.0-dev"><![CDATA[Icon name: {name}]]></phrase>
+  <phrase title="iconbox.tooltip_size" version_id="1" version_string="1.0.0-dev"><![CDATA[Original size: {size}]]></phrase>
+  <phrase title="iconbox.uncategorized" version_id="1" version_string="1.0.0-dev"><![CDATA[Uncategorized]]></phrase>
+  <phrase title="iconbox.vflip_text" version_id="1" version_string="1.0.0-dev"><![CDATA[Vertical]]></phrase>
+  <phrase title="iconbox.vflip_tooltip" version_id="1" version_string="1.0.0-dev"><![CDATA[Flip vertically]]></phrase>
+  <phrase title="please_select_data_type_array_for_icon" version_id="1" version_string="1.0.0-dev"><![CDATA[Please select the data type 'array' for icon.]]></phrase>
+</phrases>
