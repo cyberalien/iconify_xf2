@@ -90,7 +90,7 @@
             this.alwaysShowColor = $target.attr('data-always-show-color') === 'true';
             this.canReset = $target.attr('data-can-reset') === 'true';
 
-            this.value = IconifySearch.valueFromString(this.originalValue.value);
+            this.value = typeof this.originalValue.value === 'string' ? IconifySearch.valueFromString(this.originalValue.value) : '';
             this.color = typeof this.originalValue.color === 'string' ? this.originalValue.color : '';
             if (this.showColor) {
                 this.defaultColorResolved = $target.attr('data-resolved-color');
@@ -101,7 +101,7 @@
             this.readOnly = false;
             this.required = checkBooleanAttribute(this.originalValue.required, false, 'required');
             this.canTransform = checkBooleanAttribute(this.originalValue.canTransform, true);
-            this.defaultValue = this.originalValue.default === void 0 ? null : IconifySearch.valueFromString(this.originalValue.default);
+            this.defaultValue = typeof this.originalValue.default !== 'string' ? null : IconifySearch.valueFromString(this.originalValue.default);
 
             // Check for transform
             if (!this.canTransform && this.value && this.value.icon && (this.value.rotate || this.value.hFlip || this.value.vFlip)) {

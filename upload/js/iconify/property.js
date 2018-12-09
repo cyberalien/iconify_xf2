@@ -49,10 +49,7 @@
                 });
 
                 keepValue = defaultValue.value !== defaultValue.default;
-                console.log('Keeping value', keepValue ? 'yes' : 'no');
             }
-            console.log('format:', format);
-            console.log('defaultValue:', defaultValue);
 
             $inputs.can_transform.prop('checked', defaultValue.canTransform);
             $inputs.show_color.prop('checked', defaultValue.showColor);
