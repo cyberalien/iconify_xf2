@@ -1,9 +1,9 @@
 {
     "legacy_addon_id": "",
     "title": "Iconify Support",
-    "description": "",
+    "description": "Adds icon picker with over 30,000 icons to choose from. Intended for add-on and style developers.",
     "version_id": 1,
-    "version_string": "1.0.0-beta1",
+    "version_string": "0.0.1",
     "dev": "",
     "dev_url": "",
     "faq_url": "",

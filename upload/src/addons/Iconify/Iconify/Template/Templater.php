@@ -2,9 +2,6 @@
 
 namespace Iconify\Iconify\Template;
 
-use XF\App;
-use XF\Language;
-
 class Templater extends XFCP_Templater
 {
     protected $iconBoxCachedColorData = null;
@@ -26,7 +23,7 @@ class Templater extends XFCP_Templater
             $value = $controlOptions['value'];
             unset($controlOptions['value']);
         } else
-            {
+        {
             $value = '';
         }
 
@@ -206,8 +203,8 @@ class Templater extends XFCP_Templater
 
         // Icon picker input
         $input .= '<div class="inputGroup inputGroup--joined inputGroup--iconbox' . ($readonly ? ' inputGroup--readonly' : '') . '">' .
-                '<input type="text" class="input input--icon" spellcheck="false" ' . ($readonly ? 'readonly="readonly" ' : '') . '/>' .
-                '<div class="inputGroup-text' . ($readonly ? ' inputGroup-text--disabled' : '') . ' js-iconbox-trigger"><span class="iconbox"><span class="iconbox-sample-container"></span></span></div>' .
+            '<input type="text" class="input input--icon" spellcheck="false" ' . ($readonly ? 'readonly="readonly" ' : '') . '/>' .
+            '<div class="inputGroup-text' . ($readonly ? ' inputGroup-text--disabled' : '') . ' js-iconbox-trigger"><span class="iconbox"><span class="iconbox-sample-container"></span></span></div>' .
             '</div>';
 
         // Color picker
