@@ -97,6 +97,16 @@ class Setup extends AbstractSetup
             {
             }
         });
+
+        // Disable all template modifications
+        // See https://xenforo.com/community/threads/template-modifications-are-active-after-add-on-uninstallation-via-cmd-php.158304/#post-1308831
+        $finder = \XF::finder('XF:TemplateModification');
+        $finder->where('addon_id', 'Iconify/Iconify');
+        foreach ($finder->fetch() as $tm)
+        {
+            $tm->enabled = false;
+            $tm->save();
+        }
     }
 
     /**
@@ -106,5 +116,4 @@ class Setup extends AbstractSetup
     {
         ConfigHelper::updateConfig(false);
     }
-
 }
