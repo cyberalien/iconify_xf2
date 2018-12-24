@@ -7,6 +7,11 @@
 use Iconify\Iconify\Template\Compiler\Tag\Icon;
 use Iconify\Iconify\Template\Compiler\Tag\IconBoxRow;
 
+if (!defined('XF_ICONIFY'))
+{
+    define('XF_ICONIFY', '1.0.0-rc5');
+}
+
 /** @var \XF\Container $c */
 $c['templateCompiler'] = function ($c)
 {
@@ -37,7 +42,7 @@ $c['templater'] = function ($c)
 
     $templater = $this->setupTemplaterObject($c, 'Iconify\\Iconify\\Template\\Templater');
 
-    $templater->setPageParam('head.js-iconify', $templater->preEscaped('<script src="//code.iconify.design/1/1.0.0-rc5/iconify.min.js"></script>'));
+    $templater->setPageParam('head.js-iconify', $templater->preEscaped('<script src="//code.iconify.design/1/' . XF_ICONIFY . '/iconify.min.js"></script>'));
 
     return $templater;
 };

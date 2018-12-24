@@ -346,7 +346,6 @@ class Templater extends XFCP_Templater
 
         // Generate element
         $htmlTag = $inline ? 'span' : 'iconify-icon';
-        $baseClassName = $inline ? 'iconify ' : '';
         $html = '<' . $htmlTag;
 
         // Set class
@@ -355,7 +354,7 @@ class Templater extends XFCP_Templater
         {
             $className = ' ' . $className;
         }
-        $html .= ' class="' . $baseClassName . htmlspecialchars($icon) . $className . '"';
+        $html .= ' class="iconify ' . htmlspecialchars($icon) . $className . '"';
 
         // Set style and color
         if (isset($options['color']))
