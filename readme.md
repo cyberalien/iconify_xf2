@@ -3,9 +3,9 @@
 Iconify Integration add-on for XenForo 2.
 
 This add-on adds the following functionality to XenForo 2:
-* Icon picker input: xf:iconbox and xf:iconboxrow
-* Icon element: xf:icon and xf:inlineicon
-* Support for Iconify tags: <span class="iconify" data-icon="mdi-home"></span> and <iconify-icon data-icon="mdi-home"></iconify-icon>
+* Template tags for icon picker: xf:iconbox and xf:iconboxrow
+* Template tags for icon: xf:icon and xf:inlineicon
+* Support for Iconify tags: ```<span class="iconify" data-icon="mdi-home"></span>``` and ```<iconify-icon data-icon="mdi-home"></iconify-icon>```
 
 Add-on is available on XenForo: https://xenforo.com/community/resources/iconify-integration.6851/
 
