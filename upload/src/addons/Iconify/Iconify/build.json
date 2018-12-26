@@ -1,0 +1,10 @@
+{
+  "additional_files": [
+    "js/iconify"
+  ],
+  "minify": [
+    "js/iconify/input.js",
+    "js/iconify/option.js",
+    "js/iconify/property.js"
+  ]
+}
