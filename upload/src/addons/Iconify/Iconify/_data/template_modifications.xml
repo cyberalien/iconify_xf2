@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <template_modifications>
+  <modification type="admin" template="addon_list_macros" modification_key="addon_list_macros_iconify" description="Add Iconify icons support to Add-ons list" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:elseif is="$addOn.hasIcon()" />]]></find>
+    <replace><![CDATA[<xf:elseif is="contains($addOn.icon, 'icon:')" />
+				<iconify-icon class="{$addOn.icon}" data-width="64px" data-height="64px"></iconify-icon>
+			<xf:elseif is="$addOn.hasIcon()" />]]></replace>
+  </modification>
   <modification type="admin" template="option_edit" modification_key="option_edit_icon_editor" description="Add icon to option editor" execution_order="10" enabled="1" action="str_replace">
     <find><![CDATA[<xf:textarearow name="edit_format_params"]]></find>
     <replace><![CDATA[<xf:js src="iconify/option.js" />
