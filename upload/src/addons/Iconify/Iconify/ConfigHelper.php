@@ -62,7 +62,7 @@ if (@file_exists(\$iconifyConfigFile))
      */
     public static function addCodeToConfig($config)
     {
-        if (strpos($config, 'Iconify') !== false)
+        if (strpos($config, 'Iconify/config.php') !== false || strpos($config, 'Iconify' . DIRECTORY_SEPARATOR . 'config.php') !== false)
         {
             return false;
         }

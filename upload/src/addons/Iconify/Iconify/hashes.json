@@ -10,7 +10,7 @@
     "src/addons/Iconify/Iconify/addon.json": "95b7021e52977ccc97cc7259572071081fcb6824e49e37f22f192655c628b068",
     "src/addons/Iconify/Iconify/Admin/Controller/StyleProperty.php": "09dd15dbea7e6a32e26dea8bd2da1c5e0a69210a3ef66c4c957f0ca571c20a7e",
     "src/addons/Iconify/Iconify/config.php": "11d108a1b2e3dbf69590e7736401fce0bd9320ee632d34060f61cbecf1a5122b",
-    "src/addons/Iconify/Iconify/ConfigHelper.php": "98d7bea87d57377e51fea7b489dd14ab04bb6c0ba406e57b9058cb2be07cfef3",
+    "src/addons/Iconify/Iconify/ConfigHelper.php": "46b7446931a8955fc5d853a762509638baad8665727300c56b3d23dabc6e3d2a",
     "src/addons/Iconify/Iconify/Entity/Option.php": "acc785f8c357fbb9e6b67e101c920d354beb85d0b8dd8f635556c530a6114c17",
     "src/addons/Iconify/Iconify/Entity/StyleProperty.php": "6efe067450955a3fbdb4a3552b8c13e678659c37cff86e1a3b424321fe50e617",
     "src/addons/Iconify/Iconify/Setup.php": "56ec059b3e489e58523a1309f38df9e17968f9206eabc6538116a97e9ec5821a",
