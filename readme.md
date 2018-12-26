@@ -44,7 +44,7 @@ If you are uninstalling Iconify Integration add-on, make sure you uninstall all 
 $iconifyConfigFile = __DIR__ . '/addons/Iconify/Iconify/config.php';
 if (@file_exists($iconifyConfigFile))
 {
-  require($iconifyConfigFile);
+    require($iconifyConfigFile);
 }
 /* End of Iconify code */
 
