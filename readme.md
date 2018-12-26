@@ -32,7 +32,7 @@ If your src/config.php is not writable by PHP, you need to add code yourself.
 
 How to add code to src/config.php:
 
-* Below you can see code. Select all code (Ctrl+A on Windows, Cmd+A on Mac) and copy it (Ctrl+C on Windows, Cmd+C on Mac).
+* Below you can see code. Select all code and copy it (Ctrl+C on Windows, Cmd+C on Mac).
 * Open src/config.php in any text editor, move cursor to end of file and paste code (Ctrl+V on Windows, Cmd+V on Mac).
 
 If you are uninstalling Iconify Integration add-on, make sure you uninstall all add-ons and styles that depend on it first. Then you can uninstall Iconify Integration add-on and after that you can remove code from src/config.php.
